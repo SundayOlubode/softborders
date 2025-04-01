@@ -1,0 +1,42 @@
+.wallet-connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background-color: var(--color-card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.wallet-status {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-indicator {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: var(--spacing-sm);
+}
+
+.wallet-indicator.connected {
+  background-color: var(--color-success);
+}
+
+.wallet-indicator.disconnected {
+  background-color: var(--color-error);
+}
+
+.wallet-address {
+  font-size: var(--font-size-sm);
+}
+
+.network-badge {
+  font-size: var(--font-size-xs);
+  background-color: rgba(25, 118, 210, 0.1);
+  color: var(--color-primary);
+  padding: 4px 8px;
+  border-radius: 20px;
+}
