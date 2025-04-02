@@ -5,7 +5,8 @@ const BalanceCard = ({ balances, exchangeRate, feePercentage, isLoading }) => {
   return (
     <div className="balance-grid">
       <div className="balance-card rwanda">
-        <h2 className="balance-title text-rwanda">RWFC Balance</h2>
+        <h2 className="balance-title text-rwanda">Bank of Kigali</h2>
+        <div className="balance-subtitle">RWFC Balance</div>
         {isLoading ? (
           <div className="loading-pulse"></div>
         ) : (
@@ -17,7 +18,8 @@ const BalanceCard = ({ balances, exchangeRate, feePercentage, isLoading }) => {
       </div>
 
       <div className="balance-card kenya">
-        <h2 className="balance-title text-kenya">eKES Balance</h2>
+        <h2 className="balance-title text-kenya">KCB Bank</h2>
+        <div className="balance-subtitle">eKES Balance</div>
         {isLoading ? (
           <div className="loading-pulse"></div>
         ) : (
